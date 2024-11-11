@@ -1,5 +1,5 @@
 # PhD-Research_NTNU
-The following are my PhD Work From NTNU and all the corresponding code 
+The following are my PhD Work From NTNU, Postdoc at University of Galgary and all the corresponding code 
 
 The papers are published as following:
 
