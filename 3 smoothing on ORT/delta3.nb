@@ -1,0 +1,412 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     11282,        403]
+NotebookOptionsPosition[     10032,        353]
+NotebookOutlinePosition[     10375,        368]
+CellTagsIndexPosition[     10332,        365]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"Clear", "[", "\"\<Global`*\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.6557292595553856`*^9, 3.655729260429008*^9}, 
+   3.655729332011261*^9}],
+
+Cell[CellGroupData[{
+
+Cell["the expression for delta3 with other parameters", "Section",
+ CellChangeTimes->{{3.672647339943941*^9, 3.672647353205196*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+notice in Vasconcelos and Tsvankin\[CloseCurlyQuote]s notation delta1 in YOZ \
+plane, delta2 in XOZ plane\
+\>", "Subsection",
+ CellChangeTimes->{{3.672647951826318*^9, 3.6726480106174526`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Solve", "[", 
+  RowBox[{
+   RowBox[{"eta3", "\[Equal]", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"epslion2", "-", "epslion1", "-", 
+       RowBox[{"delta3", "*", 
+        RowBox[{"(", 
+         RowBox[{"1", "+", 
+          RowBox[{"2", "*", "epslion1"}]}], ")"}]}]}], ")"}], "/", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         RowBox[{"2", "*", "delta3"}]}], ")"}], "*", 
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         RowBox[{"2", "*", "epslion1"}]}], ")"}]}], ")"}]}]}], ",", 
+   "delta3"}], "]"}]], "Input",
+ CellChangeTimes->{{3.672647602957757*^9, 3.6726477055187254`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{"delta3", "\[Rule]", 
+    FractionBox[
+     RowBox[{
+      RowBox[{"-", "epslion1"}], "+", "epslion2", "-", "eta3", "-", 
+      RowBox[{"2", " ", "epslion1", " ", "eta3"}]}], 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"1", "+", 
+        RowBox[{"2", " ", "epslion1"}]}], ")"}], " ", 
+      RowBox[{"(", 
+       RowBox[{"1", "+", 
+        RowBox[{"2", " ", "eta3"}]}], ")"}]}]]}], "}"}], "}"}]], "Output",
+ CellChangeTimes->{3.672647708109409*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"eta3", "\[Equal]", 
+  RowBox[{
+   RowBox[{"(", 
+    RowBox[{"epslion2", "-", "epslion1", "-", 
+     RowBox[{"delta3", "*", 
+      RowBox[{"(", 
+       RowBox[{"1", "+", 
+        RowBox[{"2", "*", "epslion1"}]}], ")"}]}]}], ")"}], "/", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"1", "+", 
+       RowBox[{"2", "*", "delta3"}]}], ")"}], "*", 
+     RowBox[{"(", 
+      RowBox[{"1", "+", 
+       RowBox[{"2", "*", "epslion1"}]}], ")"}]}], ")"}]}]}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"eta3", "\[Equal]", 
+  FractionBox[
+   RowBox[{
+    RowBox[{"-", "epslion1"}], "-", 
+    RowBox[{"delta3", " ", 
+     RowBox[{"(", 
+      RowBox[{"1", "+", 
+       RowBox[{"2", " ", "epslion1"}]}], ")"}]}], "+", "epslion2"}], 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"1", "+", 
+      RowBox[{"2", " ", "delta3"}]}], ")"}], " ", 
+    RowBox[{"(", 
+     RowBox[{"1", "+", 
+      RowBox[{"2", " ", "epslion1"}]}], ")"}]}]]}]], "Output",
+ CellChangeTimes->{3.6726477177369175`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"etaxy", "\[Equal]", 
+  RowBox[{
+   RowBox[{"Sqrt", "[", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"1", "+", 
+       RowBox[{"2", "*", "eta1"}]}], ")"}], "*", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"1", "+", 
+        RowBox[{"2", "*", "eta2"}]}], ")"}], "/", 
+      RowBox[{"(", 
+       RowBox[{"1", "+", 
+        RowBox[{"2", "*", "eta3"}]}], ")"}]}]}], "]"}], "-", "1"}]}]], "Input",
+ CellChangeTimes->{{3.672647806047551*^9, 3.6726478518712196`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"etaxy", "\[Equal]", 
+  RowBox[{
+   RowBox[{"-", "1"}], "+", 
+   SqrtBox[
+    FractionBox[
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"1", "+", 
+        RowBox[{"2", " ", "eta1"}]}], ")"}], " ", 
+      RowBox[{"(", 
+       RowBox[{"1", "+", 
+        RowBox[{"2", " ", "eta2"}]}], ")"}]}], 
+     RowBox[{"1", "+", 
+      RowBox[{"2", " ", "eta3"}]}]]]}]}]], "Output",
+ CellChangeTimes->{3.6726478541708946`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Solve", "[", 
+  RowBox[{
+   RowBox[{"etaxy", "\[Equal]", 
+    RowBox[{
+     RowBox[{"Sqrt", "[", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         RowBox[{"2", "*", "eta1"}]}], ")"}], "*", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"1", "+", 
+          RowBox[{"2", "*", "eta2"}]}], ")"}], "/", 
+        RowBox[{"(", 
+         RowBox[{"1", "+", 
+          RowBox[{"2", "*", "eta3"}]}], ")"}]}]}], "]"}], "-", "1"}]}], ",", 
+   "eta3"}], "]"}]], "Input",
+ CellChangeTimes->{{3.672647869335581*^9, 3.6726478791170945`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{"eta3", "\[Rule]", 
+    FractionBox[
+     RowBox[{
+      RowBox[{"2", " ", "eta1"}], "+", 
+      RowBox[{"2", " ", "eta2"}], "+", 
+      RowBox[{"4", " ", "eta1", " ", "eta2"}], "-", 
+      RowBox[{"2", " ", "etaxy"}], "-", 
+      SuperscriptBox["etaxy", "2"]}], 
+     RowBox[{"2", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", "etaxy"}], ")"}], "2"]}]]}], "}"}], "}"}]], "Output",
+ CellChangeTimes->{3.6726478807863483`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["the expression for delta3", "Subsubsection",
+ CellChangeTimes->{{3.672647890975475*^9, 3.6726478967944613`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Simplify", "[", 
+  RowBox[{
+   FractionBox[
+    RowBox[{
+     RowBox[{"-", "epslion1"}], "+", "epslion2", "-", "eta3", "-", 
+     RowBox[{"2", " ", "epslion1", " ", "eta3"}]}], 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"1", "+", 
+       RowBox[{"2", " ", "epslion1"}]}], ")"}], " ", 
+     RowBox[{"(", 
+      RowBox[{"1", "+", 
+       RowBox[{"2", " ", "eta3"}]}], ")"}]}]], "/.", 
+   RowBox[{"eta3", "\[Rule]", 
+    FractionBox[
+     RowBox[{
+      RowBox[{"2", " ", "eta1"}], "+", 
+      RowBox[{"2", " ", "eta2"}], "+", 
+      RowBox[{"4", " ", "eta1", " ", "eta2"}], "-", 
+      RowBox[{"2", " ", "etaxy"}], "-", 
+      SuperscriptBox["etaxy", "2"]}], 
+     RowBox[{"2", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", "etaxy"}], ")"}], "2"]}]]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.67264791043332*^9, 3.6726479308585143`*^9}}],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{
+   RowBox[{
+    RowBox[{"-", "2"}], " ", "eta1"}], "-", 
+   RowBox[{"2", " ", "eta2"}], "-", 
+   RowBox[{"4", " ", "eta1", " ", "eta2"}], "-", 
+   RowBox[{"2", " ", "epslion1", " ", 
+    RowBox[{"(", 
+     RowBox[{"1", "+", 
+      RowBox[{"2", " ", "eta1"}]}], ")"}], " ", 
+    RowBox[{"(", 
+     RowBox[{"1", "+", 
+      RowBox[{"2", " ", "eta2"}]}], ")"}]}], "+", 
+   RowBox[{"2", " ", "etaxy"}], "+", 
+   SuperscriptBox["etaxy", "2"], "+", 
+   RowBox[{"2", " ", "epslion2", " ", 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"1", "+", "etaxy"}], ")"}], "2"]}]}], 
+  RowBox[{"2", " ", 
+   RowBox[{"(", 
+    RowBox[{"1", "+", 
+     RowBox[{"2", " ", "epslion1"}]}], ")"}], " ", 
+   RowBox[{"(", 
+    RowBox[{"1", "+", 
+     RowBox[{"2", " ", "eta1"}]}], ")"}], " ", 
+   RowBox[{"(", 
+    RowBox[{"1", "+", 
+     RowBox[{"2", " ", "eta2"}]}], ")"}]}]]], "Output",
+ CellChangeTimes->{{3.6726479208899226`*^9, 3.6726479314825263`*^9}}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["the expression for etaxy(eta3)", "Subsubsection",
+ CellChangeTimes->{{3.672651472599683*^9, 3.6726514923361893`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"eta3", "\[Equal]", 
+  RowBox[{
+   RowBox[{"(", 
+    RowBox[{"epslion2", "-", "epslion1", "-", 
+     RowBox[{"delta3", "*", 
+      RowBox[{"(", 
+       RowBox[{"1", "+", 
+        RowBox[{"2", "*", "epslion1"}]}], ")"}]}]}], ")"}], "/", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"1", "+", 
+       RowBox[{"2", "*", "delta3"}]}], ")"}], "*", 
+     RowBox[{"(", 
+      RowBox[{"1", "+", 
+       RowBox[{"2", "*", "epslion1"}]}], ")"}]}], ")"}]}]}]], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"etaxy", "\[Equal]", 
+  RowBox[{"Simplify", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"Sqrt", "[", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         RowBox[{"2", "*", "eta1"}]}], ")"}], "*", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"1", "+", 
+          RowBox[{"2", "*", "eta2"}]}], ")"}], "/", 
+        RowBox[{"(", 
+         RowBox[{"1", "+", 
+          RowBox[{"2", "*", "eta3"}]}], ")"}]}]}], "]"}], "-", "1"}], "/.", 
+    RowBox[{"eta3", "->", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"epslion2", "-", "epslion1", "-", 
+        RowBox[{"delta3", "*", 
+         RowBox[{"(", 
+          RowBox[{"1", "+", 
+           RowBox[{"2", "*", "epslion1"}]}], ")"}]}]}], ")"}], "/", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"1", "+", 
+          RowBox[{"2", "*", "delta3"}]}], ")"}], "*", 
+        RowBox[{"(", 
+         RowBox[{"1", "+", 
+          RowBox[{"2", "*", "epslion1"}]}], ")"}]}], ")"}]}]}]}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.6726515647762485`*^9, 3.672651596887681*^9}}],
+
+Cell[BoxData[
+ RowBox[{"etaxy", "\[Equal]", 
+  RowBox[{
+   RowBox[{"-", "1"}], "+", 
+   SqrtBox[
+    FractionBox[
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"1", "+", 
+        RowBox[{"2", " ", "delta3"}]}], ")"}], " ", 
+      RowBox[{"(", 
+       RowBox[{"1", "+", 
+        RowBox[{"2", " ", "epslion1"}]}], ")"}], " ", 
+      RowBox[{"(", 
+       RowBox[{"1", "+", 
+        RowBox[{"2", " ", "eta1"}]}], ")"}], " ", 
+      RowBox[{"(", 
+       RowBox[{"1", "+", 
+        RowBox[{"2", " ", "eta2"}]}], ")"}]}], 
+     RowBox[{"1", "+", 
+      RowBox[{"2", " ", "epslion2"}]}]]]}]}]], "Output",
+ CellChangeTimes->{{3.6726515616073666`*^9, 3.6726515976218953`*^9}}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1680, 968},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+FrontEndVersion->"10.2 for Microsoft Windows (64-bit) (July 29, 2015)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 167, 3, 31, "Input"],
+Cell[CellGroupData[{
+Cell[750, 27, 132, 1, 70, "Section"],
+Cell[CellGroupData[{
+Cell[907, 32, 203, 4, 49, "Subsection"],
+Cell[CellGroupData[{
+Cell[1135, 40, 663, 20, 31, "Input"],
+Cell[1801, 62, 509, 15, 48, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2347, 82, 500, 16, 31, "Input"],
+Cell[2850, 100, 503, 16, 48, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3390, 121, 492, 15, 31, "Input"],
+Cell[3885, 138, 439, 15, 57, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4361, 158, 581, 18, 31, "Input"],
+Cell[4945, 178, 510, 15, 52, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5492, 198, 118, 1, 39, "Subsubsection"],
+Cell[CellGroupData[{
+Cell[5635, 203, 893, 26, 52, "Input"],
+Cell[6531, 231, 980, 30, 51, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7560, 267, 123, 1, 39, "Subsubsection"],
+Cell[7686, 270, 500, 16, 31, "Input"],
+Cell[CellGroupData[{
+Cell[8211, 290, 1097, 34, 31, "Input"],
+Cell[9311, 326, 669, 21, 89, "Output"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
