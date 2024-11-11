@@ -1,0 +1,11 @@
+Abstract
+Multiparameter stacking is a crucial tool to get a high-quality time image of the subsurface,
+which can provide a basis for many important applications. We analyse the CRS
+approximation for a circular reflector embedded into effective anisotropic media. In this
+case, the CRS attributes depend on both reflector curvature and anisotropy parameters. We
+consider the effective anisotropic model from two anisotropic cases—elliptical isotropic
+and transversely isotropic with vertical symmetry axis—and one vertically heterogeneous
+isotropic case, i.e. two-layer model. By performing a sensitivity analysis, we show how the
+estimates depend on anisotropy parameters. We convert the CRS attributes into parameters for
+the isotropic model and analyse these estimates’ behaviour along the seismic line. From this
+behaviour, we estimate both structure and anisotropy parameters.
