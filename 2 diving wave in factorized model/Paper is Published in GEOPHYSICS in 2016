@@ -1,0 +1,18 @@
+The importance of diving waves is being realized because
+they provide long-wavelength model information, which can
+be used to help invert for the reflection information in fullwaveform
+inversion. The factorized model is defined here
+as a combination of vertical heterogeneity and constant
+anisotropy, and it admits closed-form description of the traveltime.
+We have used these resulting analytical formulas to
+describe the behavior of diving waves in a factorized anisotropic
+medium, and we used an approximate imaging moveout
+formulation (residual moveout after imaging) to update
+the velocity model when the wrong model parameters (isotropic
+assumption) were used for imaging. We then used
+these analytical representations of the image moveout to establish
+a semblance analysis framework to search for the optimal
+anisotropic parameters. We have also discussed
+different parameterizations of the factorized medium to find
+the one that gave the best accuracy in anisotropy parameters
+estimation.
