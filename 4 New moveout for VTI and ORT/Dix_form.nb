@@ -1,0 +1,1176 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     39985,       1167]
+NotebookOptionsPosition[     38721,       1118]
+NotebookOutlinePosition[     39063,       1133]
+CellTagsIndexPosition[     39020,       1130]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"Clear", "[", "\"\<Global`*\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.6557292595553856`*^9, 3.655729260429008*^9}, 
+   3.655729332011261*^9}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"f1", "=", 
+  RowBox[{"1", "-", 
+   RowBox[{
+    RowBox[{"vh1", "^", "2"}], "*", 
+    RowBox[{"px", "^", "2"}]}], "-", 
+   RowBox[{
+    RowBox[{"vh2", "^", "2"}], "*", 
+    RowBox[{"py", "^", "2"}]}], "+", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"1", "+", 
+          RowBox[{"2", "*", "eta1"}]}], ")"}], "*", 
+        RowBox[{"(", 
+         RowBox[{"1", "+", 
+          RowBox[{"2", "*", "eta2"}]}], ")"}]}], "-", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"1", "+", "etaxy"}], ")"}], "^", "2"}]}], ")"}], "/", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         RowBox[{"2", "*", "eta1"}]}], ")"}], "*", 
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         RowBox[{"2", "*", "eta2"}]}], ")"}]}], ")"}]}], "*", 
+    RowBox[{"px", "^", "2"}], "*", 
+    RowBox[{"py", "^", "2"}], "*", 
+    RowBox[{"vh1", "^", "2"}], "*", 
+    RowBox[{"vh2", "^", "2"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.6641683569472713`*^9, 3.664168359058483*^9}, {
+  3.66416866859076*^9, 3.664168678057659*^9}, {3.6641687599244947`*^9, 
+  3.664168890813987*^9}}],
+
+Cell[BoxData[
+ RowBox[{"1", "-", 
+  RowBox[{
+   SuperscriptBox["px", "2"], " ", 
+   SuperscriptBox["vh1", "2"]}], "-", 
+  RowBox[{
+   SuperscriptBox["py", "2"], " ", 
+   SuperscriptBox["vh2", "2"]}], "+", 
+  FractionBox[
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         RowBox[{"2", " ", "eta1"}]}], ")"}], " ", 
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         RowBox[{"2", " ", "eta2"}]}], ")"}]}], "-", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", "etaxy"}], ")"}], "2"]}], ")"}], " ", 
+    SuperscriptBox["px", "2"], " ", 
+    SuperscriptBox["py", "2"], " ", 
+    SuperscriptBox["vh1", "2"], " ", 
+    SuperscriptBox["vh2", "2"]}], 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"1", "+", 
+      RowBox[{"2", " ", "eta1"}]}], ")"}], " ", 
+    RowBox[{"(", 
+     RowBox[{"1", "+", 
+      RowBox[{"2", " ", "eta2"}]}], ")"}]}]]}]], "Output",
+ CellChangeTimes->{3.664168995489024*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"f2", "=", 
+  RowBox[{"1", "-", 
+   RowBox[{"2", "*", 
+    RowBox[{"eta1", "/", 
+     RowBox[{"(", 
+      RowBox[{"1", "+", 
+       RowBox[{"2", "*", "eta1"}]}], ")"}]}], "*", 
+    RowBox[{"px", "^", "2"}], "*", 
+    RowBox[{"vh1", "^", "2"}]}], "-", 
+   RowBox[{"2", "*", 
+    RowBox[{"eta2", "/", 
+     RowBox[{"(", 
+      RowBox[{"1", "+", 
+       RowBox[{"2", "*", "eta2"}]}], ")"}]}], "*", 
+    RowBox[{"py", "^", "2"}], "*", 
+    RowBox[{"vh2", "^", "2"}]}], "+", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"4", "*", "eta1", "*", "eta2"}], "-", 
+       RowBox[{"etaxy", "^", "2"}]}], ")"}], "/", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         RowBox[{"2", "*", "eta1"}]}], ")"}], "*", 
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         RowBox[{"2", "*", "eta2"}]}], ")"}]}], ")"}]}], "*", 
+    RowBox[{"px", "^", "2"}], "*", 
+    RowBox[{"py", "^", "2"}], "*", 
+    RowBox[{"vh1", "^", "2"}], "*", 
+    RowBox[{"vh2", "^", "2"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.664168894768363*^9, 3.664168987129231*^9}}],
+
+Cell[BoxData[
+ RowBox[{"1", "-", 
+  FractionBox[
+   RowBox[{"2", " ", "eta1", " ", 
+    SuperscriptBox["px", "2"], " ", 
+    SuperscriptBox["vh1", "2"]}], 
+   RowBox[{"1", "+", 
+    RowBox[{"2", " ", "eta1"}]}]], "-", 
+  FractionBox[
+   RowBox[{"2", " ", "eta2", " ", 
+    SuperscriptBox["py", "2"], " ", 
+    SuperscriptBox["vh2", "2"]}], 
+   RowBox[{"1", "+", 
+    RowBox[{"2", " ", "eta2"}]}]], "+", 
+  FractionBox[
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"4", " ", "eta1", " ", "eta2"}], "-", 
+      SuperscriptBox["etaxy", "2"]}], ")"}], " ", 
+    SuperscriptBox["px", "2"], " ", 
+    SuperscriptBox["py", "2"], " ", 
+    SuperscriptBox["vh1", "2"], " ", 
+    SuperscriptBox["vh2", "2"]}], 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"1", "+", 
+      RowBox[{"2", " ", "eta1"}]}], ")"}], " ", 
+    RowBox[{"(", 
+     RowBox[{"1", "+", 
+      RowBox[{"2", " ", "eta2"}]}], ")"}]}]]}]], "Output",
+ CellChangeTimes->{3.664168999926448*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"qxy", "=", 
+  RowBox[{
+   RowBox[{"Sqrt", "[", 
+    RowBox[{"f1", "/", "f2"}], "]"}], "/", "v0"}]}]], "Input",
+ CellChangeTimes->{{3.6641690975447617`*^9, 3.6641691299988527`*^9}}],
+
+Cell[BoxData[
+ FractionBox[
+  SqrtBox[
+   FractionBox[
+    RowBox[{"1", "-", 
+     RowBox[{
+      SuperscriptBox["px", "2"], " ", 
+      SuperscriptBox["vh1", "2"]}], "-", 
+     RowBox[{
+      SuperscriptBox["py", "2"], " ", 
+      SuperscriptBox["vh2", "2"]}], "+", 
+     FractionBox[
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"1", "+", 
+            RowBox[{"2", " ", "eta1"}]}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{"1", "+", 
+            RowBox[{"2", " ", "eta2"}]}], ")"}]}], "-", 
+         SuperscriptBox[
+          RowBox[{"(", 
+           RowBox[{"1", "+", "etaxy"}], ")"}], "2"]}], ")"}], " ", 
+       SuperscriptBox["px", "2"], " ", 
+       SuperscriptBox["py", "2"], " ", 
+       SuperscriptBox["vh1", "2"], " ", 
+       SuperscriptBox["vh2", "2"]}], 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         RowBox[{"2", " ", "eta1"}]}], ")"}], " ", 
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         RowBox[{"2", " ", "eta2"}]}], ")"}]}]]}], 
+    RowBox[{"1", "-", 
+     FractionBox[
+      RowBox[{"2", " ", "eta1", " ", 
+       SuperscriptBox["px", "2"], " ", 
+       SuperscriptBox["vh1", "2"]}], 
+      RowBox[{"1", "+", 
+       RowBox[{"2", " ", "eta1"}]}]], "-", 
+     FractionBox[
+      RowBox[{"2", " ", "eta2", " ", 
+       SuperscriptBox["py", "2"], " ", 
+       SuperscriptBox["vh2", "2"]}], 
+      RowBox[{"1", "+", 
+       RowBox[{"2", " ", "eta2"}]}]], "+", 
+     FractionBox[
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"4", " ", "eta1", " ", "eta2"}], "-", 
+         SuperscriptBox["etaxy", "2"]}], ")"}], " ", 
+       SuperscriptBox["px", "2"], " ", 
+       SuperscriptBox["py", "2"], " ", 
+       SuperscriptBox["vh1", "2"], " ", 
+       SuperscriptBox["vh2", "2"]}], 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         RowBox[{"2", " ", "eta1"}]}], ")"}], " ", 
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         RowBox[{"2", " ", "eta2"}]}], ")"}]}]]}]]], "v0"]], "Output",
+ CellChangeTimes->{3.6641691372965455`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Series", "[", 
+  RowBox[{"qxy", ",", 
+   RowBox[{"{", 
+    RowBox[{"px", ",", "0", ",", "4"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"py", ",", "0", ",", "4"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.664169149775745*^9, 3.664169205735076*^9}}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"(", 
+    InterpretationBox[
+     RowBox[{
+      FractionBox["1", "v0"], "-", 
+      FractionBox[
+       RowBox[{
+        SuperscriptBox["vh2", "2"], " ", 
+        SuperscriptBox["py", "2"]}], 
+       RowBox[{"2", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"1", "+", 
+            RowBox[{"2", " ", "eta2"}]}], ")"}], " ", "v0"}], ")"}]}]], "+", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", 
+          FractionBox[
+           SuperscriptBox["vh2", "4"], 
+           RowBox[{"8", " ", 
+            SuperscriptBox[
+             RowBox[{"(", 
+              RowBox[{"1", "+", 
+               RowBox[{"2", " ", "eta2"}]}], ")"}], "2"], " ", "v0"}]]}], "-", 
+         FractionBox[
+          RowBox[{"eta2", " ", 
+           SuperscriptBox["vh2", "4"]}], 
+          RowBox[{
+           SuperscriptBox[
+            RowBox[{"(", 
+             RowBox[{"1", "+", 
+              RowBox[{"2", " ", "eta2"}]}], ")"}], "2"], " ", "v0"}]]}], 
+        ")"}], " ", 
+       SuperscriptBox["py", "4"]}], "+", 
+      InterpretationBox[
+       SuperscriptBox[
+        RowBox[{"O", "[", "py", "]"}], "5"],
+       SeriesData[$CellContext`py, 0, {}, 0, 5, 1],
+       Editable->False]}],
+     SeriesData[$CellContext`py, 
+      0, {$CellContext`v0^(-1), 0, 
+       Rational[-1, 2] (1 + 
+         2 $CellContext`eta2)^(-1) $CellContext`v0^(-1) $CellContext`vh2^2, 0,
+        Rational[-1, 8] (1 + 
+          2 $CellContext`eta2)^(-2) $CellContext`v0^(-1) $CellContext`vh2^4 - \
+$CellContext`eta2 (1 + 
+         2 $CellContext`eta2)^(-2) $CellContext`v0^(-1) $CellContext`vh2^4}, 
+      0, 5, 1],
+     Editable->False], ")"}], "+", 
+   RowBox[{
+    RowBox[{"(", 
+     InterpretationBox[
+      RowBox[{
+       RowBox[{"-", 
+        FractionBox[
+         SuperscriptBox["vh1", "2"], 
+         RowBox[{"2", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{"1", "+", 
+              RowBox[{"2", " ", "eta1"}]}], ")"}], " ", "v0"}], ")"}]}]]}], 
+       "+", 
+       FractionBox[
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", 
+             SuperscriptBox["vh1", "2"]}], " ", 
+            SuperscriptBox["vh2", "2"]}], "-", 
+           RowBox[{"4", " ", "etaxy", " ", 
+            SuperscriptBox["vh1", "2"], " ", 
+            SuperscriptBox["vh2", "2"]}]}], ")"}], " ", 
+         SuperscriptBox["py", "2"]}], 
+        RowBox[{"4", " ", 
+         RowBox[{"(", 
+          RowBox[{"1", "+", 
+           RowBox[{"2", " ", "eta1"}]}], ")"}], " ", 
+         RowBox[{"(", 
+          RowBox[{"1", "+", 
+           RowBox[{"2", " ", "eta2"}]}], ")"}], " ", "v0"}]], "+", 
+       FractionBox[
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", "3"}], " ", 
+            SuperscriptBox["vh1", "2"], " ", 
+            SuperscriptBox["vh2", "4"]}], "-", 
+           RowBox[{"8", " ", "eta2", " ", 
+            SuperscriptBox["vh1", "2"], " ", 
+            SuperscriptBox["vh2", "4"]}], "-", 
+           RowBox[{"8", " ", "etaxy", " ", 
+            SuperscriptBox["vh1", "2"], " ", 
+            SuperscriptBox["vh2", "4"]}], "-", 
+           RowBox[{"32", " ", "eta2", " ", "etaxy", " ", 
+            SuperscriptBox["vh1", "2"], " ", 
+            SuperscriptBox["vh2", "4"]}], "-", 
+           RowBox[{"8", " ", 
+            SuperscriptBox["etaxy", "2"], " ", 
+            SuperscriptBox["vh1", "2"], " ", 
+            SuperscriptBox["vh2", "4"]}]}], ")"}], " ", 
+         SuperscriptBox["py", "4"]}], 
+        RowBox[{"16", " ", 
+         RowBox[{"(", 
+          RowBox[{"1", "+", 
+           RowBox[{"2", " ", "eta1"}]}], ")"}], " ", 
+         SuperscriptBox[
+          RowBox[{"(", 
+           RowBox[{"1", "+", 
+            RowBox[{"2", " ", "eta2"}]}], ")"}], "2"], " ", "v0"}]], "+", 
+       InterpretationBox[
+        SuperscriptBox[
+         RowBox[{"O", "[", "py", "]"}], "5"],
+        SeriesData[$CellContext`py, 0, {}, 0, 5, 1],
+        Editable->False]}],
+      SeriesData[$CellContext`py, 0, {
+       Rational[-1, 2] (1 + 
+          2 $CellContext`eta1)^(-1) $CellContext`v0^(-1) $CellContext`vh1^2, 
+        0, Rational[
+         1, 4] (1 + 2 $CellContext`eta1)^(-1) (1 + 
+          2 $CellContext`eta2)^(-1) $CellContext`v0^(-1) (-$CellContext`vh1^2 \
+$CellContext`vh2^2 - 
+         4 $CellContext`etaxy $CellContext`vh1^2 $CellContext`vh2^2), 0, 
+        Rational[
+         1, 16] (1 + 2 $CellContext`eta1)^(-1) (1 + 
+          2 $CellContext`eta2)^(-2) $CellContext`v0^(-1) ((-3) \
+$CellContext`vh1^2 $CellContext`vh2^4 - 
+         8 $CellContext`eta2 $CellContext`vh1^2 $CellContext`vh2^4 - 
+         8 $CellContext`etaxy $CellContext`vh1^2 $CellContext`vh2^4 - 
+         32 $CellContext`eta2 $CellContext`etaxy $CellContext`vh1^2 \
+$CellContext`vh2^4 - 
+         8 $CellContext`etaxy^2 $CellContext`vh1^2 $CellContext`vh2^4)}, 0, 5,
+        1],
+      Editable->False], ")"}], " ", 
+    SuperscriptBox["px", "2"]}], "+", 
+   RowBox[{
+    RowBox[{"(", 
+     InterpretationBox[
+      RowBox[{
+       RowBox[{"-", 
+        FractionBox[
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"1", "+", 
+            RowBox[{"8", " ", "eta1"}]}], ")"}], " ", 
+          SuperscriptBox["vh1", "4"]}], 
+         RowBox[{"8", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            SuperscriptBox[
+             RowBox[{"(", 
+              RowBox[{"1", "+", 
+               RowBox[{"2", " ", "eta1"}]}], ")"}], "2"], " ", "v0"}], 
+           ")"}]}]]}], "+", 
+       FractionBox[
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", "3"}], " ", 
+            SuperscriptBox["vh1", "4"], " ", 
+            SuperscriptBox["vh2", "2"]}], "-", 
+           RowBox[{"8", " ", "eta1", " ", 
+            SuperscriptBox["vh1", "4"], " ", 
+            SuperscriptBox["vh2", "2"]}], "-", 
+           RowBox[{"8", " ", "etaxy", " ", 
+            SuperscriptBox["vh1", "4"], " ", 
+            SuperscriptBox["vh2", "2"]}], "-", 
+           RowBox[{"32", " ", "eta1", " ", "etaxy", " ", 
+            SuperscriptBox["vh1", "4"], " ", 
+            SuperscriptBox["vh2", "2"]}], "-", 
+           RowBox[{"8", " ", 
+            SuperscriptBox["etaxy", "2"], " ", 
+            SuperscriptBox["vh1", "4"], " ", 
+            SuperscriptBox["vh2", "2"]}]}], ")"}], " ", 
+         SuperscriptBox["py", "2"]}], 
+        RowBox[{"16", " ", 
+         SuperscriptBox[
+          RowBox[{"(", 
+           RowBox[{"1", "+", 
+            RowBox[{"2", " ", "eta1"}]}], ")"}], "2"], " ", 
+         RowBox[{"(", 
+          RowBox[{"1", "+", 
+           RowBox[{"2", " ", "eta2"}]}], ")"}], " ", "v0"}]], "+", 
+       RowBox[{
+        FractionBox["1", 
+         RowBox[{"64", " ", 
+          SuperscriptBox[
+           RowBox[{"(", 
+            RowBox[{"1", "+", 
+             RowBox[{"2", " ", "eta1"}]}], ")"}], "2"], " ", 
+          SuperscriptBox[
+           RowBox[{"(", 
+            RowBox[{"1", "+", 
+             RowBox[{"2", " ", "eta2"}]}], ")"}], "2"], " ", "v0"}]], 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", "15"}], " ", 
+            SuperscriptBox["vh1", "4"], " ", 
+            SuperscriptBox["vh2", "4"]}], "-", 
+           RowBox[{"24", " ", "eta1", " ", 
+            SuperscriptBox["vh1", "4"], " ", 
+            SuperscriptBox["vh2", "4"]}], "-", 
+           RowBox[{"24", " ", "eta2", " ", 
+            SuperscriptBox["vh1", "4"], " ", 
+            SuperscriptBox["vh2", "4"]}], "-", 
+           RowBox[{"64", " ", "eta1", " ", "eta2", " ", 
+            SuperscriptBox["vh1", "4"], " ", 
+            SuperscriptBox["vh2", "4"]}], "-", 
+           RowBox[{"48", " ", "etaxy", " ", 
+            SuperscriptBox["vh1", "4"], " ", 
+            SuperscriptBox["vh2", "4"]}], "-", 
+           RowBox[{"64", " ", "eta1", " ", "etaxy", " ", 
+            SuperscriptBox["vh1", "4"], " ", 
+            SuperscriptBox["vh2", "4"]}], "-", 
+           RowBox[{"64", " ", "eta2", " ", "etaxy", " ", 
+            SuperscriptBox["vh1", "4"], " ", 
+            SuperscriptBox["vh2", "4"]}], "-", 
+           RowBox[{"256", " ", "eta1", " ", "eta2", " ", "etaxy", " ", 
+            SuperscriptBox["vh1", "4"], " ", 
+            SuperscriptBox["vh2", "4"]}], "-", 
+           RowBox[{"64", " ", 
+            SuperscriptBox["etaxy", "2"], " ", 
+            SuperscriptBox["vh1", "4"], " ", 
+            SuperscriptBox["vh2", "4"]}], "-", 
+           RowBox[{"64", " ", "eta1", " ", 
+            SuperscriptBox["etaxy", "2"], " ", 
+            SuperscriptBox["vh1", "4"], " ", 
+            SuperscriptBox["vh2", "4"]}], "-", 
+           RowBox[{"64", " ", "eta2", " ", 
+            SuperscriptBox["etaxy", "2"], " ", 
+            SuperscriptBox["vh1", "4"], " ", 
+            SuperscriptBox["vh2", "4"]}], "-", 
+           RowBox[{"64", " ", 
+            SuperscriptBox["etaxy", "3"], " ", 
+            SuperscriptBox["vh1", "4"], " ", 
+            SuperscriptBox["vh2", "4"]}]}], ")"}], " ", 
+         SuperscriptBox["py", "4"]}]}], "+", 
+       InterpretationBox[
+        SuperscriptBox[
+         RowBox[{"O", "[", "py", "]"}], "5"],
+        SeriesData[$CellContext`py, 0, {}, 0, 5, 1],
+        Editable->False]}],
+      SeriesData[$CellContext`py, 0, {
+       Rational[-1, 8] (1 + 2 $CellContext`eta1)^(-2) (1 + 
+         8 $CellContext`eta1) $CellContext`v0^(-1) $CellContext`vh1^4, 0, 
+        Rational[
+         1, 16] (1 + 2 $CellContext`eta1)^(-2) (1 + 
+          2 $CellContext`eta2)^(-1) $CellContext`v0^(-1) ((-3) \
+$CellContext`vh1^4 $CellContext`vh2^2 - 
+         8 $CellContext`eta1 $CellContext`vh1^4 $CellContext`vh2^2 - 
+         8 $CellContext`etaxy $CellContext`vh1^4 $CellContext`vh2^2 - 
+         32 $CellContext`eta1 $CellContext`etaxy $CellContext`vh1^4 \
+$CellContext`vh2^2 - 
+         8 $CellContext`etaxy^2 $CellContext`vh1^4 $CellContext`vh2^2), 0, 
+        Rational[
+         1, 64] (1 + 2 $CellContext`eta1)^(-2) (1 + 
+          2 $CellContext`eta2)^(-2) $CellContext`v0^(-1) ((-15) \
+$CellContext`vh1^4 $CellContext`vh2^4 - 
+         24 $CellContext`eta1 $CellContext`vh1^4 $CellContext`vh2^4 - 
+         24 $CellContext`eta2 $CellContext`vh1^4 $CellContext`vh2^4 - 
+         64 $CellContext`eta1 $CellContext`eta2 $CellContext`vh1^4 \
+$CellContext`vh2^4 - 
+         48 $CellContext`etaxy $CellContext`vh1^4 $CellContext`vh2^4 - 
+         64 $CellContext`eta1 $CellContext`etaxy $CellContext`vh1^4 \
+$CellContext`vh2^4 - 
+         64 $CellContext`eta2 $CellContext`etaxy $CellContext`vh1^4 \
+$CellContext`vh2^4 - 
+         256 $CellContext`eta1 $CellContext`eta2 $CellContext`etaxy \
+$CellContext`vh1^4 $CellContext`vh2^4 - 
+         64 $CellContext`etaxy^2 $CellContext`vh1^4 $CellContext`vh2^4 - 
+         64 $CellContext`eta1 $CellContext`etaxy^2 $CellContext`vh1^4 \
+$CellContext`vh2^4 - 
+         64 $CellContext`eta2 $CellContext`etaxy^2 $CellContext`vh1^4 \
+$CellContext`vh2^4 - 
+         64 $CellContext`etaxy^3 $CellContext`vh1^4 $CellContext`vh2^4)}, 0, 
+       5, 1],
+      Editable->False], ")"}], " ", 
+    SuperscriptBox["px", "4"]}], "+", 
+   InterpretationBox[
+    SuperscriptBox[
+     RowBox[{"O", "[", "px", "]"}], "5"],
+    SeriesData[$CellContext`px, 0, {}, 0, 5, 1],
+    Editable->False]}],
+  SeriesData[$CellContext`px, 0, {
+    SeriesData[$CellContext`py, 
+     0, {$CellContext`v0^(-1), 0, 
+      Rational[-1, 2] (1 + 
+        2 $CellContext`eta2)^(-1) $CellContext`v0^(-1) $CellContext`vh2^2, 0, 
+      Rational[-1, 8] (1 + 
+         2 $CellContext`eta2)^(-2) $CellContext`v0^(-1) $CellContext`vh2^4 - \
+$CellContext`eta2 (1 + 
+        2 $CellContext`eta2)^(-2) $CellContext`v0^(-1) $CellContext`vh2^4}, 0,
+      5, 1], 0, 
+    SeriesData[$CellContext`py, 0, {
+     Rational[-1, 2] (1 + 
+        2 $CellContext`eta1)^(-1) $CellContext`v0^(-1) $CellContext`vh1^2, 0, 
+      Rational[1, 4] (1 + 2 $CellContext`eta1)^(-1) (1 + 
+        2 $CellContext`eta2)^(-1) $CellContext`v0^(-1) (-$CellContext`vh1^2 \
+$CellContext`vh2^2 - 
+       4 $CellContext`etaxy $CellContext`vh1^2 $CellContext`vh2^2), 0, 
+      Rational[1, 16] (1 + 2 $CellContext`eta1)^(-1) (1 + 
+        2 $CellContext`eta2)^(-2) $CellContext`v0^(-1) ((-3) \
+$CellContext`vh1^2 $CellContext`vh2^4 - 
+       8 $CellContext`eta2 $CellContext`vh1^2 $CellContext`vh2^4 - 
+       8 $CellContext`etaxy $CellContext`vh1^2 $CellContext`vh2^4 - 
+       32 $CellContext`eta2 $CellContext`etaxy $CellContext`vh1^2 \
+$CellContext`vh2^4 - 
+       8 $CellContext`etaxy^2 $CellContext`vh1^2 $CellContext`vh2^4)}, 0, 5, 
+     1], 0, 
+    SeriesData[$CellContext`py, 0, {
+     Rational[-1, 8] (1 + 2 $CellContext`eta1)^(-2) (1 + 
+       8 $CellContext`eta1) $CellContext`v0^(-1) $CellContext`vh1^4, 0, 
+      Rational[1, 16] (1 + 2 $CellContext`eta1)^(-2) (1 + 
+        2 $CellContext`eta2)^(-1) $CellContext`v0^(-1) ((-3) \
+$CellContext`vh1^4 $CellContext`vh2^2 - 
+       8 $CellContext`eta1 $CellContext`vh1^4 $CellContext`vh2^2 - 
+       8 $CellContext`etaxy $CellContext`vh1^4 $CellContext`vh2^2 - 
+       32 $CellContext`eta1 $CellContext`etaxy $CellContext`vh1^4 \
+$CellContext`vh2^2 - 
+       8 $CellContext`etaxy^2 $CellContext`vh1^4 $CellContext`vh2^2), 0, 
+      Rational[1, 64] (1 + 2 $CellContext`eta1)^(-2) (1 + 
+        2 $CellContext`eta2)^(-2) $CellContext`v0^(-1) ((-15) \
+$CellContext`vh1^4 $CellContext`vh2^4 - 
+       24 $CellContext`eta1 $CellContext`vh1^4 $CellContext`vh2^4 - 
+       24 $CellContext`eta2 $CellContext`vh1^4 $CellContext`vh2^4 - 
+       64 $CellContext`eta1 $CellContext`eta2 $CellContext`vh1^4 \
+$CellContext`vh2^4 - 
+       48 $CellContext`etaxy $CellContext`vh1^4 $CellContext`vh2^4 - 
+       64 $CellContext`eta1 $CellContext`etaxy $CellContext`vh1^4 \
+$CellContext`vh2^4 - 
+       64 $CellContext`eta2 $CellContext`etaxy $CellContext`vh1^4 \
+$CellContext`vh2^4 - 
+       256 $CellContext`eta1 $CellContext`eta2 $CellContext`etaxy \
+$CellContext`vh1^4 $CellContext`vh2^4 - 
+       64 $CellContext`etaxy^2 $CellContext`vh1^4 $CellContext`vh2^4 - 
+       64 $CellContext`eta1 $CellContext`etaxy^2 $CellContext`vh1^4 \
+$CellContext`vh2^4 - 
+       64 $CellContext`eta2 $CellContext`etaxy^2 $CellContext`vh1^4 \
+$CellContext`vh2^4 - 
+       64 $CellContext`etaxy^3 $CellContext`vh1^4 $CellContext`vh2^4)}, 0, 5, 
+     1]}, 0, 5, 1],
+  Editable->False]], "Output",
+ CellChangeTimes->{3.6641692083383245`*^9, 3.66416971729021*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Series", "[", 
+  RowBox[{"qxy", ",", 
+   RowBox[{"{", 
+    RowBox[{"px", ",", "0", ",", "4"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"py", ",", "0", ",", "2"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{
+  3.6641695587098837`*^9, {3.6641695953614335`*^9, 3.6641696260063887`*^9}}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"(", 
+    InterpretationBox[
+     RowBox[{
+      FractionBox["1", "v0"], "-", 
+      FractionBox[
+       RowBox[{
+        SuperscriptBox["vh2", "2"], " ", 
+        SuperscriptBox["py", "2"]}], 
+       RowBox[{"2", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"1", "+", 
+            RowBox[{"2", " ", "eta2"}]}], ")"}], " ", "v0"}], ")"}]}]], "+", 
+      InterpretationBox[
+       SuperscriptBox[
+        RowBox[{"O", "[", "py", "]"}], "3"],
+       SeriesData[$CellContext`py, 0, {}, 0, 3, 1],
+       Editable->False]}],
+     SeriesData[$CellContext`py, 
+      0, {$CellContext`v0^(-1), 0, 
+       Rational[-1, 2] (1 + 
+         2 $CellContext`eta2)^(-1) $CellContext`v0^(-1) $CellContext`vh2^2}, 
+      0, 3, 1],
+     Editable->False], ")"}], "+", 
+   RowBox[{
+    RowBox[{"(", 
+     InterpretationBox[
+      RowBox[{
+       RowBox[{"-", 
+        FractionBox[
+         SuperscriptBox["vh1", "2"], 
+         RowBox[{"2", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{"1", "+", 
+              RowBox[{"2", " ", "eta1"}]}], ")"}], " ", "v0"}], ")"}]}]]}], 
+       "+", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", 
+           FractionBox[
+            RowBox[{
+             SuperscriptBox["vh1", "2"], " ", 
+             SuperscriptBox["vh2", "2"]}], 
+            RowBox[{"4", " ", 
+             RowBox[{"(", 
+              RowBox[{"1", "+", 
+               RowBox[{"2", " ", "eta1"}]}], ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{"1", "+", 
+               RowBox[{"2", " ", "eta2"}]}], ")"}], " ", "v0"}]]}], "-", 
+          FractionBox[
+           RowBox[{"etaxy", " ", 
+            SuperscriptBox["vh1", "2"], " ", 
+            SuperscriptBox["vh2", "2"]}], 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{"1", "+", 
+              RowBox[{"2", " ", "eta1"}]}], ")"}], " ", 
+            RowBox[{"(", 
+             RowBox[{"1", "+", 
+              RowBox[{"2", " ", "eta2"}]}], ")"}], " ", "v0"}]]}], ")"}], " ", 
+        SuperscriptBox["py", "2"]}], "+", 
+       InterpretationBox[
+        SuperscriptBox[
+         RowBox[{"O", "[", "py", "]"}], "3"],
+        SeriesData[$CellContext`py, 0, {}, 0, 3, 1],
+        Editable->False]}],
+      SeriesData[$CellContext`py, 0, {
+       Rational[-1, 2] (1 + 
+          2 $CellContext`eta1)^(-1) $CellContext`v0^(-1) $CellContext`vh1^2, 
+        0, Rational[-1, 4] (1 + 2 $CellContext`eta1)^(-1) (1 + 
+           2 $CellContext`eta2)^(-1) $CellContext`v0^(-1) $CellContext`vh1^2 \
+$CellContext`vh2^2 - (1 + 2 $CellContext`eta1)^(-1) (1 + 
+          2 $CellContext`eta2)^(-1) $CellContext`etaxy $CellContext`v0^(-1) \
+$CellContext`vh1^2 $CellContext`vh2^2}, 0, 3, 1],
+      Editable->False], ")"}], " ", 
+    SuperscriptBox["px", "2"]}], "+", 
+   RowBox[{
+    RowBox[{"(", 
+     InterpretationBox[
+      RowBox[{
+       RowBox[{"-", 
+        FractionBox[
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"1", "+", 
+            RowBox[{"8", " ", "eta1"}]}], ")"}], " ", 
+          SuperscriptBox["vh1", "4"]}], 
+         RowBox[{"8", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            SuperscriptBox[
+             RowBox[{"(", 
+              RowBox[{"1", "+", 
+               RowBox[{"2", " ", "eta1"}]}], ")"}], "2"], " ", "v0"}], 
+           ")"}]}]]}], "+", 
+       FractionBox[
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", "3"}], " ", 
+            SuperscriptBox["vh1", "4"], " ", 
+            SuperscriptBox["vh2", "2"]}], "-", 
+           RowBox[{"8", " ", "eta1", " ", 
+            SuperscriptBox["vh1", "4"], " ", 
+            SuperscriptBox["vh2", "2"]}], "-", 
+           RowBox[{"8", " ", "etaxy", " ", 
+            SuperscriptBox["vh1", "4"], " ", 
+            SuperscriptBox["vh2", "2"]}], "-", 
+           RowBox[{"32", " ", "eta1", " ", "etaxy", " ", 
+            SuperscriptBox["vh1", "4"], " ", 
+            SuperscriptBox["vh2", "2"]}], "-", 
+           RowBox[{"8", " ", 
+            SuperscriptBox["etaxy", "2"], " ", 
+            SuperscriptBox["vh1", "4"], " ", 
+            SuperscriptBox["vh2", "2"]}]}], ")"}], " ", 
+         SuperscriptBox["py", "2"]}], 
+        RowBox[{"16", " ", 
+         SuperscriptBox[
+          RowBox[{"(", 
+           RowBox[{"1", "+", 
+            RowBox[{"2", " ", "eta1"}]}], ")"}], "2"], " ", 
+         RowBox[{"(", 
+          RowBox[{"1", "+", 
+           RowBox[{"2", " ", "eta2"}]}], ")"}], " ", "v0"}]], "+", 
+       InterpretationBox[
+        SuperscriptBox[
+         RowBox[{"O", "[", "py", "]"}], "3"],
+        SeriesData[$CellContext`py, 0, {}, 0, 3, 1],
+        Editable->False]}],
+      SeriesData[$CellContext`py, 0, {
+       Rational[-1, 8] (1 + 2 $CellContext`eta1)^(-2) (1 + 
+         8 $CellContext`eta1) $CellContext`v0^(-1) $CellContext`vh1^4, 0, 
+        Rational[
+         1, 16] (1 + 2 $CellContext`eta1)^(-2) (1 + 
+          2 $CellContext`eta2)^(-1) $CellContext`v0^(-1) ((-3) \
+$CellContext`vh1^4 $CellContext`vh2^2 - 
+         8 $CellContext`eta1 $CellContext`vh1^4 $CellContext`vh2^2 - 
+         8 $CellContext`etaxy $CellContext`vh1^4 $CellContext`vh2^2 - 
+         32 $CellContext`eta1 $CellContext`etaxy $CellContext`vh1^4 \
+$CellContext`vh2^2 - 
+         8 $CellContext`etaxy^2 $CellContext`vh1^4 $CellContext`vh2^2)}, 0, 3,
+        1],
+      Editable->False], ")"}], " ", 
+    SuperscriptBox["px", "4"]}], "+", 
+   InterpretationBox[
+    SuperscriptBox[
+     RowBox[{"O", "[", "px", "]"}], "5"],
+    SeriesData[$CellContext`px, 0, {}, 0, 5, 1],
+    Editable->False]}],
+  SeriesData[$CellContext`px, 0, {
+    SeriesData[$CellContext`py, 
+     0, {$CellContext`v0^(-1), 0, 
+      Rational[-1, 2] (1 + 
+        2 $CellContext`eta2)^(-1) $CellContext`v0^(-1) $CellContext`vh2^2}, 0,
+      3, 1], 0, 
+    SeriesData[$CellContext`py, 0, {
+     Rational[-1, 2] (1 + 
+        2 $CellContext`eta1)^(-1) $CellContext`v0^(-1) $CellContext`vh1^2, 0, 
+      Rational[-1, 4] (1 + 2 $CellContext`eta1)^(-1) (1 + 
+         2 $CellContext`eta2)^(-1) $CellContext`v0^(-1) $CellContext`vh1^2 \
+$CellContext`vh2^2 - (1 + 2 $CellContext`eta1)^(-1) (1 + 
+        2 $CellContext`eta2)^(-1) $CellContext`etaxy $CellContext`v0^(-1) \
+$CellContext`vh1^2 $CellContext`vh2^2}, 0, 3, 1], 0, 
+    SeriesData[$CellContext`py, 0, {
+     Rational[-1, 8] (1 + 2 $CellContext`eta1)^(-2) (1 + 
+       8 $CellContext`eta1) $CellContext`v0^(-1) $CellContext`vh1^4, 0, 
+      Rational[1, 16] (1 + 2 $CellContext`eta1)^(-2) (1 + 
+        2 $CellContext`eta2)^(-1) $CellContext`v0^(-1) ((-3) \
+$CellContext`vh1^4 $CellContext`vh2^2 - 
+       8 $CellContext`eta1 $CellContext`vh1^4 $CellContext`vh2^2 - 
+       8 $CellContext`etaxy $CellContext`vh1^4 $CellContext`vh2^2 - 
+       32 $CellContext`eta1 $CellContext`etaxy $CellContext`vh1^4 \
+$CellContext`vh2^2 - 
+       8 $CellContext`etaxy^2 $CellContext`vh1^4 $CellContext`vh2^2)}, 0, 3, 
+     1]}, 0, 5, 1],
+  Editable->False]], "Output",
+ CellChangeTimes->{3.664169562427244*^9, 3.664169600040882*^9, 
+  3.6641696318159456`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Dix form", "Section",
+ CellChangeTimes->{{3.6641694476961718`*^9, 3.664169449340333*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Qxy", "=", 
+  RowBox[{"Simplify", "[", 
+   RowBox[{
+    FractionBox["1", "v0"], "-", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["vh2", "2"], " ", 
+      SuperscriptBox["py", "2"]}], 
+     RowBox[{"2", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"1", "+", 
+          RowBox[{"2", " ", "eta2"}]}], ")"}], " ", "v0"}], ")"}]}]], "+", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"-", 
+        FractionBox[
+         SuperscriptBox["vh2", "4"], 
+         RowBox[{"8", " ", 
+          SuperscriptBox[
+           RowBox[{"(", 
+            RowBox[{"1", "+", 
+             RowBox[{"2", " ", "eta2"}]}], ")"}], "2"], " ", "v0"}]]}], "-", 
+       FractionBox[
+        RowBox[{"eta2", " ", 
+         SuperscriptBox["vh2", "4"]}], 
+        RowBox[{
+         SuperscriptBox[
+          RowBox[{"(", 
+           RowBox[{"1", "+", 
+            RowBox[{"2", " ", "eta2"}]}], ")"}], "2"], " ", "v0"}]]}], ")"}], 
+     " ", 
+     SuperscriptBox["py", "4"]}], "-", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["vh1", "2"], 
+      SuperscriptBox["px", "2"]}], 
+     RowBox[{"2", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"1", "+", 
+          RowBox[{"2", " ", "eta1"}]}], ")"}], " ", "v0"}], ")"}]}]], "+", 
+    FractionBox[
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", 
+          SuperscriptBox["vh1", "2"]}], " ", 
+         SuperscriptBox["vh2", "2"]}], "-", 
+        RowBox[{"4", " ", "etaxy", " ", 
+         SuperscriptBox["vh1", "2"], " ", 
+         SuperscriptBox["vh2", "2"]}]}], ")"}], " ", 
+      SuperscriptBox["py", "2"], 
+      SuperscriptBox["px", "2"]}], 
+     RowBox[{"4", " ", 
+      RowBox[{"(", 
+       RowBox[{"1", "+", 
+        RowBox[{"2", " ", "eta1"}]}], ")"}], " ", 
+      RowBox[{"(", 
+       RowBox[{"1", "+", 
+        RowBox[{"2", " ", "eta2"}]}], ")"}], " ", "v0"}]], "-", 
+    FractionBox[
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"1", "+", 
+        RowBox[{"8", " ", "eta1"}]}], ")"}], " ", 
+      SuperscriptBox["vh1", "4"], 
+      SuperscriptBox["px", "4"]}], 
+     RowBox[{"8", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        SuperscriptBox[
+         RowBox[{"(", 
+          RowBox[{"1", "+", 
+           RowBox[{"2", " ", "eta1"}]}], ")"}], "2"], " ", "v0"}], ")"}]}]]}],
+    "]"}]}]], "Input",
+ CellChangeTimes->{{3.664169459501318*^9, 3.6641695355106487`*^9}, {
+  3.6641701704996815`*^9, 3.6641702036398816`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  FractionBox["1", "8"], " ", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"-", 
+     FractionBox[
+      RowBox[{"4", " ", 
+       SuperscriptBox["px", "2"], " ", 
+       SuperscriptBox["vh1", "2"]}], 
+      RowBox[{"v0", "+", 
+       RowBox[{"2", " ", "eta1", " ", "v0"}]}]]}], "-", 
+    FractionBox[
+     RowBox[{"4", " ", 
+      SuperscriptBox["py", "2"], " ", 
+      SuperscriptBox["vh2", "2"]}], 
+     RowBox[{"v0", "+", 
+      RowBox[{"2", " ", "eta2", " ", "v0"}]}]], "-", 
+    FractionBox[
+     RowBox[{
+      RowBox[{"-", "8"}], "+", 
+      FractionBox[
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"1", "+", 
+          RowBox[{"8", " ", "eta1"}]}], ")"}], " ", 
+        SuperscriptBox["px", "4"], " ", 
+        SuperscriptBox["vh1", "4"]}], 
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{"1", "+", 
+          RowBox[{"2", " ", "eta1"}]}], ")"}], "2"]], "+", 
+      FractionBox[
+       RowBox[{"2", " ", 
+        RowBox[{"(", 
+         RowBox[{"1", "+", 
+          RowBox[{"4", " ", "etaxy"}]}], ")"}], " ", 
+        SuperscriptBox["px", "2"], " ", 
+        SuperscriptBox["py", "2"], " ", 
+        SuperscriptBox["vh1", "2"], " ", 
+        SuperscriptBox["vh2", "2"]}], 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"1", "+", 
+          RowBox[{"2", " ", "eta1"}]}], ")"}], " ", 
+        RowBox[{"(", 
+         RowBox[{"1", "+", 
+          RowBox[{"2", " ", "eta2"}]}], ")"}]}]], "+", 
+      FractionBox[
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"1", "+", 
+          RowBox[{"8", " ", "eta2"}]}], ")"}], " ", 
+        SuperscriptBox["py", "4"], " ", 
+        SuperscriptBox["vh2", "4"]}], 
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{"1", "+", 
+          RowBox[{"2", " ", "eta2"}]}], ")"}], "2"]]}], "v0"]}], 
+   ")"}]}]], "Output",
+ CellChangeTimes->{3.6641702052430377`*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"Expand", "[", "Qxy", "]"}]], "Input",
+ CellChangeTimes->{{3.6641702558301315`*^9, 3.66417028829005*^9}},
+ NumberMarks->False],
+
+Cell[BoxData[
+ RowBox[{"Simplify", "[", 
+  RowBox[{
+   FractionBox["1", "v0"], "-", 
+   FractionBox[
+    RowBox[{
+     SuperscriptBox["px", "2"], " ", 
+     SuperscriptBox["vh1", "2"]}], 
+    RowBox[{"2", " ", 
+     RowBox[{"(", 
+      RowBox[{"v0", "+", 
+       RowBox[{"2", " ", "eta1", " ", "v0"}]}], ")"}]}]], "-", 
+   FractionBox[
+    RowBox[{
+     SuperscriptBox["px", "4"], " ", 
+     SuperscriptBox["vh1", "4"]}], 
+    RowBox[{"8", " ", 
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{"1", "+", 
+        RowBox[{"2", " ", "eta1"}]}], ")"}], "2"], " ", "v0"}]], "-", 
+   FractionBox[
+    RowBox[{"eta1", " ", 
+     SuperscriptBox["px", "4"], " ", 
+     SuperscriptBox["vh1", "4"]}], 
+    RowBox[{
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{"1", "+", 
+        RowBox[{"2", " ", "eta1"}]}], ")"}], "2"], " ", "v0"}]], "-", 
+   FractionBox[
+    RowBox[{
+     SuperscriptBox["py", "2"], " ", 
+     SuperscriptBox["vh2", "2"]}], 
+    RowBox[{"2", " ", 
+     RowBox[{"(", 
+      RowBox[{"v0", "+", 
+       RowBox[{"2", " ", "eta2", " ", "v0"}]}], ")"}]}]], "-", 
+   FractionBox[
+    RowBox[{
+     SuperscriptBox["px", "2"], " ", 
+     SuperscriptBox["py", "2"], " ", 
+     SuperscriptBox["vh1", "2"], " ", 
+     SuperscriptBox["vh2", "2"]}], 
+    RowBox[{"4", " ", 
+     RowBox[{"(", 
+      RowBox[{"1", "+", 
+       RowBox[{"2", " ", "eta1"}]}], ")"}], " ", 
+     RowBox[{"(", 
+      RowBox[{"1", "+", 
+       RowBox[{"2", " ", "eta2"}]}], ")"}], " ", "v0"}]], "-", 
+   FractionBox[
+    RowBox[{"etaxy", " ", 
+     SuperscriptBox["px", "2"], " ", 
+     SuperscriptBox["py", "2"], " ", 
+     SuperscriptBox["vh1", "2"], " ", 
+     SuperscriptBox["vh2", "2"]}], 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"1", "+", 
+       RowBox[{"2", " ", "eta1"}]}], ")"}], " ", 
+     RowBox[{"(", 
+      RowBox[{"1", "+", 
+       RowBox[{"2", " ", "eta2"}]}], ")"}], " ", "v0"}]], "-", 
+   FractionBox[
+    RowBox[{
+     SuperscriptBox["py", "4"], " ", 
+     SuperscriptBox["vh2", "4"]}], 
+    RowBox[{"8", " ", 
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{"1", "+", 
+        RowBox[{"2", " ", "eta2"}]}], ")"}], "2"], " ", "v0"}]], "-", 
+   FractionBox[
+    RowBox[{"eta2", " ", 
+     SuperscriptBox["py", "4"], " ", 
+     SuperscriptBox["vh2", "4"]}], 
+    RowBox[{
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{"1", "+", 
+        RowBox[{"2", " ", "eta2"}]}], ")"}], "2"], " ", "v0"}]]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.664171494401862*^9, 3.6641715011412783`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["inversion form", "Section",
+ CellChangeTimes->{{3.664173624115139*^9, 3.664173634838211*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Solve", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"T0", "*", 
+     FractionBox[
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{
+         SuperscriptBox["VH1", "2"], " ", 
+         SuperscriptBox["VH2", "2"]}], "+", 
+        RowBox[{"4", " ", "etaxy", " ", 
+         SuperscriptBox["VH1", "2"], " ", 
+         SuperscriptBox["VH2", "2"]}]}], ")"}], 
+      RowBox[{"4", " ", 
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         RowBox[{"2", " ", "Eta1"}]}], ")"}], " ", 
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         RowBox[{"2", " ", "Eta2"}]}], ")"}]}]]}], "\[Equal]", "AB"}], ",", 
+   "etaxy"}], "]"}]], "Input",
+ CellChangeTimes->{{3.6641736372104483`*^9, 3.66417370892762*^9}, {
+  3.664173801618185*^9, 3.664173812182724*^9}, {3.6641776736916547`*^9, 
+  3.6641777420054855`*^9}, {3.664178505644374*^9, 3.6641785067050514`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{"etaxy", "\[Rule]", 
+    FractionBox[
+     RowBox[{
+      RowBox[{"4", " ", "AB"}], "+", 
+      RowBox[{"8", " ", "AB", " ", "Eta1"}], "+", 
+      RowBox[{"8", " ", "AB", " ", "Eta2"}], "+", 
+      RowBox[{"16", " ", "AB", " ", "Eta1", " ", "Eta2"}], "-", 
+      RowBox[{"T0", " ", 
+       SuperscriptBox["VH1", "2"], " ", 
+       SuperscriptBox["VH2", "2"]}]}], 
+     RowBox[{"4", " ", "T0", " ", 
+      SuperscriptBox["VH1", "2"], " ", 
+      SuperscriptBox["VH2", "2"]}]]}], "}"}], "}"}]], "Output",
+ CellChangeTimes->{3.6641738149460125`*^9, 3.664177748086093*^9, 
+  3.6641785103268337`*^9, 3.6641785428698936`*^9}]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{972, 968},
+WindowMargins->{{-43, Automatic}, {Automatic, 0}},
+FrontEndVersion->"10.2 for Microsoft Windows (64-bit) (July 29, 2015)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 167, 3, 31, "Input"],
+Cell[CellGroupData[{
+Cell[750, 27, 1190, 37, 52, "Input"],
+Cell[1943, 66, 982, 33, 53, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2962, 104, 1124, 35, 52, "Input"],
+Cell[4089, 141, 959, 31, 53, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5085, 177, 204, 5, 31, "Input"],
+Cell[5292, 184, 2114, 66, 101, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7443, 255, 280, 7, 31, "Input"],
+Cell[7726, 264, 14501, 351, 366, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[22264, 620, 311, 8, 31, "Input"],
+Cell[22578, 630, 7169, 186, 232, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[29784, 821, 95, 1, 70, "Section"],
+Cell[CellGroupData[{
+Cell[29904, 826, 2517, 82, 102, "Input"],
+Cell[32424, 910, 1875, 60, 76, "Output"]
+}, Open  ]],
+Cell[34314, 973, 149, 3, 31, "Input"],
+Cell[34466, 978, 2514, 83, 95, "Input"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[37017, 1066, 99, 1, 70, "Section"],
+Cell[CellGroupData[{
+Cell[37141, 1071, 874, 24, 53, "Input"],
+Cell[38018, 1097, 675, 17, 51, "Output"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
