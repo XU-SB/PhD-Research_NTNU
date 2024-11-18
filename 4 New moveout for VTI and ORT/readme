@@ -1,0 +1,15 @@
+The moveout approximations play an important role in seismic data processing. The
+standard hyperbolic moveout approximation is based on an elliptical background
+model with two velocities: vertical and normal moveout. We propose a new set
+of moveout approximations based on a perturbation series in terms of anellipticity
+parameters using the alternative elliptical background model defined by vertical and
+horizontal velocities. We start with a transversely isotropic medium with a vertical
+symmetry axis. Then, we extend this approach to a homogeneous orthorhombic
+medium. To define the perturbation coefficients for a new background, we solve the
+eikonal equation with horizontal velocities in transversely isotropic medium with a
+vertical symmetry axis and orthorhombic media. To stabilise the perturbation series
+and improve the accuracy, the Shanks transform is applied for all the cases. We
+select different parameterisations for both velocities and anellipticity parameters for
+an orthorhombic model. From the comparison in traveltime error, the new moveout
+approximations result in better accuracy comparing with the standard perturbationbased
+methods and other approximations.
