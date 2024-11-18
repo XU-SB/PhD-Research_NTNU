@@ -1,1 +1,21 @@
-
+We have defined a group of new parameterizations for
+P-wave in acoustic orthorhombic (ORT) media with three
+cross-term normal moveout velocities and three cross-term
+anellipticity parameters. The corresponding perturbationbased
+approximations for traveltime in ORT model are developed
+using the new parameterizations. The perturbation
+coefficients are computed by solving the eikonal equation in
+corresponding parameterization. Eight types of parameterization
+are defined based on the different elliptical background
+model and selection of anellipticity parameters. As
+the traveltime can be converted from the group velocity inverse,
+the sensitivity of the group velocity inverse to anellipticity
+parameters is analyzed for different parameterizations
+and different range of offsets. To stabilize the perturbation
+series and improve the accuracy, the Shanks transform is applied.
+From the comparison of traveltime after the Shanks
+transform using different parameterizations, we have concluded
+that the parameterization with vertical, two horizontal
+velocities, and three cross-term anellipticity parameters results
+in the best accuracy of traveltime function for P-wave
+in acoustic ORT medium.
